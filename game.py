@@ -158,10 +158,10 @@ class Game:
                     return 1
 
     def step(self, action):
-        source_damage = randint(self.playerchoice.minattack,
-                                self.playerchoice.maxattack)
 
         if action == "attack":
+            source_damage = randint(self.playerchoice.minattack,
+                                    self.playerchoice.maxattack)
 
             damage = source_damage * self.checkweakness("player") - self.botchoice.defence
 
@@ -183,6 +183,9 @@ class Game:
                 )
 
         elif action == "defence":
+            source_damage = randint(self.botchoice.minattack,
+                                    self.botchoice.maxattack)
+
             damage = source_damage * self.checkweakness("bot") - self.playerchoice.defence
             if damage <= 0:
                 damage = 1
