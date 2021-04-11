@@ -1,10 +1,10 @@
 import yaml
 from random import uniform, randint
 
-with open("yaml/settings.yaml") as f:
+with open("yaml/settings.yaml", encoding="UTF-8") as f:
     data = yaml.safe_load(f.read())
 
-with open("yaml/locale.yaml") as f:
+with open("yaml/locale.yaml", encoding="UTF-8") as f:
     locale = yaml.safe_load(f.read())
 
 
