@@ -1,0 +1,54 @@
+stats:
+    rock:
+        health: 18
+        damage:
+            min: 3
+            max: 4
+        defence: 0
+        levelup_exp: 5
+    paper:
+        health: 10
+        damage:
+            min: 2
+            max: 5
+        defence: 0
+        levelup_exp: 7
+    scissors:
+        health: 12
+        damage:
+            min: 3
+            max: 4
+        defence: 1
+        levelup_exp: 8
+
+modifications:
+    damage:
+        random:
+            min: 0.9
+            max: 1.1
+        critical:
+            chance: 0.15
+            mod: 2
+        
+    statsup:
+        health:
+            min: 2
+            max: 7
+        attack:
+            min: 1
+            max: 3
+        defence:
+            min: 1
+            max: 2
+        exp:
+            min: 8
+            max: 14
+            
+    expirience:
+        random: 5
+        random_mod:
+            min: 0.8
+            max: 1.2
+        win: 1.2
+        lose: 0.8
+        

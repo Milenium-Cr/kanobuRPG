@@ -1,0 +1,36 @@
+kanobu:
+    rock: "Камень"
+    paper: "Бумага"
+    scissors: "Ножницы"
+
+battle:
+    - "\nБитва началась! [УР {teamlevel} против УР {botlevel}]"
+    - "Выберите предмет:"
+    - "{number}. {kanobu} [HP {health}]"
+    - "Это не очень эффективно..."
+    - "\nВы нанесли {damage} урона!"
+    - "Противник атаковал {playerchoice}! [-{damage}]"
+    - "Вы победили!"
+        
+menu:
+    - "Меню:"
+    - "1. Битва\n2. Характеристики\n3. Настройки"
+
+check:
+    - "\n{status}{name}:\nХП {health}/{maxhealth} | АТК {minattack}-{maxattack} | ЗАЩ {defence}\nУР {level} | ОП {exp}/{levelup_exp}"
+
+level:
+    - "{kanobu} получил {exp} ед. опыта."
+    - "{kanobu} получил {exp} ед. опыта за победу! [{expbefore} -> {expafter}]"
+    - "{kanobu} потерял {exp} ед. опыта за поражение. [{expbefore} -> {expafter}]"
+
+stats:
+    - "\n{kanobu} увеличил уровень до {level}.\nХарактеристики обновлены:"
+    - "Здоровье: {health} -> {newhealth}"
+    - "Мин. урон: {minattack} -> {newminattack}"
+    - "Макс. атака: {maxattack} -> {newmaxattack}"
+    - "Защита: {defence} -> {newdefence}"
+    - "Опыт для УР {level}: {exp} -> {newexp}\n"
+
+settings:
+    - "Восстановить здоровье"
